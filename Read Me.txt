@@ -1,0 +1,44 @@
+CODE DESCRIPTION
+
+The code is build to process any kind of dataset(Categorical or Continuous).
+
+The user is required to enter the following for execution:-
+i)	"Enter the csv file path:"
+	E.g. C:\Users\rohit\Desktop\dataset\car_evaluation.csv
+
+ii)	"Enter comma separated column names:"
+	Enter the columns of the dataset (comma separated and without spaces)
+	E.g. Buying,Maint,Doors,Persons,Lug_boot,Safety,Condition,Age,Distance
+
+iii)"Does the dataset have a numerical columns (Enter '1'for Yes, '2'for No)"
+	The code is equipped to process numeric (continues) columns (if exists) apart from categorical columns. If continues columns exist, the user is required to enter ‘1’ here.
+
+iv)	"Enter comma separated column names which have numeric values:"
+	If continues columns exist, the user is required to enter their column names (comma separated and without spaces)
+	E.g. Age,Distance
+
+v)	"Enter minimum support value (0-1):"
+	E.g. 0.01 or .2
+
+vi)	"Enter candidate itemset generation type ['1' for F(k-1) x F1)] ['2' for F(k-1) x F(k-1)]:"
+	The user should specify the type via ‘1’ or ‘2’
+
+vii)"Enter minimum confidence value (%):"
+	Enter the percentage value of desired minimum confidence for rule segregation
+
+
+DATASETS USED:
+The code excepts csv files. 
+1)	Dataset: http://archive.ics.uci.edu/ml/datasets/Car+Evaluation
+	Comma seperate column value: Buying,Maint,Doors,Persons,Lug_boot,Safety,Condition
+	NOTE: This dataset donot contain continuous columns, therefore enter '2' when "Does the dataset have a numerical columns (Enter '1'for Yes, '2'for No)" is prompted
+
+2)	Dataset: https://archive.ics.uci.edu/ml/datasets/Contraceptive+Method+Choice
+	Comma seperate column value:age,wifeEducation,husbandEducation,children,religion,working,husOccu,SOL,media,conta_method
+	NOTE: This dataset donot contain continuous columns, therefore enter '1' when "Does the dataset have a numerical columns (Enter '1'for Yes, '2'for No)" is prompted
+	Enter continuous column rames: age,children
+	
+3)	Dataset: https://archive.ics.uci.edu/ml/datasets/Nursery
+	Comma seperate column value: parents,has_nurs,form,children,housing,finance,social,health,class
+	NOTE: This dataset donot contain continuous columns, therefore enter '2' when "Does the dataset have a numerical columns (Enter '1'for Yes, '2'for No)" is prompted
+	
